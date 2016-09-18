@@ -2,7 +2,7 @@
 //  ViewController.h
 //  AttributedStringDemo
 //
-//  Created by 彭永亮 on 16/9/13.
+//  Created by yongliangP on 16/9/13.
 //  Copyright © 2016年 yongliangP. All rights reserved.
 //
 

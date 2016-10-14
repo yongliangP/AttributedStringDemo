@@ -44,6 +44,8 @@
     
     self.topViewHight.constant = 10 + CGRectGetHeight(self.firstLabel.frame)+ 10 + CGRectGetHeight(self.secondLabel.frame) + 10;
     
+    
+    
 }
 
 
@@ -214,6 +216,13 @@
         case 20:
             attrStr = [[NSMutableAttributedString alloc] initWithString:@"我是NSVerticalGlyphFormAttributeName "];
             [attrStr addAttribute: NSVerticalGlyphFormAttributeName value:@(0) range: NSMakeRange(0, attrStr.length)];
+            break;
+            
+            case 21:
+        {
+            NSString * htmlString = @"<html><body> Some html string \n <font size=\"13\" color=\"red\">This is some text!This is some text!This is some text!This is some text!This is some text!</font> </body></html>";
+            attrStr = [[NSMutableAttributedString alloc] initWithData:[htmlString dataUsingEncoding:NSUnicodeStringEncoding] options:@{ NSDocumentTypeDocumentAttribute: NSHTMLTextDocumentType } documentAttributes:nil error:nil];
+        }
             break;
             
         default:
